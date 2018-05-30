@@ -1,0 +1,323 @@
+
+/* -----Big tablets to 1200 pixel(widths smaller than 1140px) -----*/
+
+@media only screen and (max-width: 1200px) {
+    
+    .hero-text-box{
+        width:100%;
+        padding: 0 2%;
+    }
+    
+    .row{
+        padding:0 2%;
+        margin:0 auto;
+    }
+    
+    .logo{
+        display:block;
+        float:left;
+        margin-left:5px;
+        padding-top:10px;     
+    }
+    
+    body{
+        font-size:19px;  
+    }
+    
+    label {      
+        font-size:14px;
+        font-weight: 400;       
+    }
+    
+    h2{
+        padding:2% 0;
+    }
+    
+    .sec-h2-p {
+        width: 90%;
+        margin-left: 10%;
+        line-height: 145%;
+    }
+    
+    footer p {
+        padding:2% 0;
+    }
+    
+    .plan-price {
+        font-size: 250%;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+    
+    .plan-box div {
+        font-size:17px;
+    }
+    
+    video{
+        width:100%;   
+    }
+ 
+    blockquote {
+        font-size:17px;
+    }
+    
+    input[type="text"], input[type="email"], textarea, select,input[type="checkbox"], input[type='submit'] {
+        margin-left: 10%;
+    }
+       .steps-box:last-child {
+    margin-top: 38px;
+      
+   }
+    .works-step {
+    margin-bottom: 50px;
+    
+    }
+    .works-step:last-of-type {
+    margin-bottom: 40px;
+}
+
+    .steps-box a img{
+        height: 40px;
+        margin-top:2%;
+  
+   }
+    
+    .iphone {
+    height: 80%;
+        width:auto;
+        margin-bottom: 15px;
+
+}
+    .plan-box {
+    width:95%;
+    margin-left:5%;
+    margin-bottom:5%;
+ 
+}
+    .v-content {
+    font-size: 250%;
+   
+    margin-top: 20%;
+  
+}
+    
+}
+
+
+
+
+
+/* small tablets to big tablets 768px to 1023px  */
+
+@media only screen and (max-width: 1023px) {
+   
+    body{
+        font-size:16px;
+    }
+    
+    .row{
+        width:100%;
+        margin:0 auto;
+    }
+    
+    
+    .logo{
+        display:block;
+        float:left;
+        margin-left:5px;
+        padding-top:10px;
+       
+         
+    }
+    .steps-box:last-child {
+    margin-bottom: 38px;
+      
+   }
+    .works-step {
+    margin-bottom: 35px;
+    
+    }
+    .works-step:last-of-type {
+    margin-bottom: 30px;
+}
+
+    
+    .steps-box a img{
+        height: 28px;
+        margin-top:2%;
+  
+   }
+    
+    .iphone {
+        height: 55%;
+        width:auto;
+        margin-bottom:5px;
+
+   }
+    
+    .main-nav { 
+        padding-top: 30px;
+        position: absolute;
+        right: 86px;
+        float: right;
+    }
+
+    input[type="text"], input[type="email"], textarea, select,input[type="checkbox"], input[type='submit'] {
+        margin-left: 5%;
+    }
+    
+    blockquote {
+        font-size:15px;
+    }
+    
+    .sec-h2-p {
+        width: 80%;
+        margin-left: 10%;
+        line-height: 145%;
+    }
+    
+    .plan-box div {
+       font-size:15px;
+    }
+      .v-content {
+    font-size: 250%;
+   
+    margin-top:25%;
+  
+}
+   
+}
+
+
+
+
+
+/* small phones to small tablets from 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+    
+    body{
+        font-size:15px;
+    }
+    .col{
+        width:100%;
+         margin:0 0 1.7% 0;
+    }
+    section{
+        padding:12px0px; 
+    }
+    .hero-text-box{
+        width:100%;
+        padding: 0 4%;
+        
+    }
+    .main-nav{
+        display:none;
+    }
+    h1{
+        font-size:180%;
+    }
+    h2{
+        font-size:160%;
+    }
+     .sec-h2-p {
+        width:80%;
+        margin-right: 20%;
+        line-height: 145%;
+    }
+    
+    
+    .steps-box a img{
+        height: 35px;
+        margin-top:3.2%;
+  
+   }
+    .steps-box:first-child {
+    text-align: center;
+   
+}
+    .works-step div {
+    float: left;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 125%;
+    margin-right: 12px;
+    
+        
+}
+    
+    
+    .iphone {
+        height: 60%;
+        width:auto;
+        margin-bottom:5px;
+        
+
+   }
+    .plan-box{
+       margin-left:2%;
+        -webkit-box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+    
+    }
+    input[type="text"], input[type="email"], textarea, select {
+    width: 90%;
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 85%;
+    border: 1px solid #ccc;
+    -webkit-transition: border .4s;
+    transition: border .4s;
+    margin-left:0;
+
+}
+    form{
+        width:95%;
+        margin-left:5%;
+        
+    }
+    input[type="checkbox"]{
+ 
+     margin-left:0;
+   
+    }
+    input[type="submit"]{
+        margin-left:0;
+    }
+
+}
+
+
+/* small phones 0px to 480 px */
+@media only screen and (max-width: 480px) {
+     h1{
+        font-size:170%;
+    }
+    h2{
+        font-size:150%;
+    }
+    .footer-nav{
+        width:80%;
+        margin-left:10%;
+    }
+    .social-link{
+         width:70%;
+         margin-left:15%;
+        margin-top:3%;
+        margin-bottom:1.5%;
+    }
+    footer p {
+        margin-left:-13.5%;
+}
+    
+.v-content {
+    font-size: 150%;
+   
+    margin-top: 15%;
+  
+}
+    
+    
+    
+}
