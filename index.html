@@ -25,16 +25,26 @@
 }
           #yourElement2 {
           animation-duration: 2s;
-         animation-delay:0s;
+         animation-delay:1s;
           
 }
  
+.progress{
+      background: blueviolet;
+      height:5px;
+      transition: width .3s ;
+      position: fixed;
+      top:0;
+      left:0;
+      z-index:10;
+    }
     </style>
         
 
     </head>
 
     <body>
+            <div class="progress"></div>
        <header id="first-section">
           <nav>
                <div class="row">
@@ -49,8 +59,8 @@
                 </div>                                    
           </nav>
            <div class="hero-text-box">
-               <h1 class="animated fadeInDownBig" id="yourElement1">Goodbye junk food.<br>Hello super healthy meals.</h1>
-               <div class="animated fadeInUpBig"id="yourElement2">
+               <h1 class="animated fadeInDown" id="yourElement1">Goodbye junk food.<br>Hello super healthy meals.</h1>
+               <div class="animated fadeInDown"id="yourElement2">
                <a href="#js-section-plans" class="btn btn-full" class="animated fadeInUpBig"id="yourElement2">I’m hungry</a>
                <a href="#features js-section-features" class="btn btn-ghost">Show me more </a>
                </div>
@@ -496,8 +506,32 @@
        <script src="resources/js/script.js"></script>
         
         <script src="resources/js/gmaps.js"></script>
-       
-
+    
+    <script>
+           window.addEventListener('scroll',debounce((e)=>{
+      console.log(e)
+      let width=(e.pageY/(document.body.clientHeight-window.innerHeight))*100;
+      document.querySelector('.progress').style.width=`${width}%`;
+      console.log(e.pageY)
+    })
+   )
+   console.log(document.body.clientHeight)
+ 
+    function debounce(func, wait = 30, immediate) {
+      var timeout;
+      return function() {
+        var context = this, args = arguments;
+        var later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+}
+    </script>
 
     </body>
 </html>
